@@ -2,6 +2,7 @@ version: 0.0.{build}
 install:
 - ps: >-
     Invoke-WebRequest http://nuget.org/nuget.exe
+- ps: >-
     nuget install NUnit.Console
 before_build:
  nuget restore
