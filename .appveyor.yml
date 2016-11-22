@@ -4,11 +4,10 @@ install:
 before_build:
  nuget restore
 build:
- parallel:true
- project:AuthorizeNET.csproj
+ project:./Authorize.NET/AuthorizeNET.csproj
  verbosity:minimal
 environment:
   COVERALLS_REPO_TOKEN:
     secure: i5GP0x27ZUHQS4syLSOKGGLh0T0t0Kykc
 after_test:
-  cmd: .\scripts\generateUnitTestmetrics.bat
+  cmd: ./scripts/generateUnitTestmetrics.bat
