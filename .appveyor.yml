@@ -1,6 +1,6 @@
 version: 0.0.{build}
 install:
- -cinst nunit
+ choco install nunit
 before_build:
  nuget restore
 build:
