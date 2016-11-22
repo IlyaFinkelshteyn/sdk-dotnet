@@ -4,6 +4,9 @@ install:
     Invoke-WebRequest http://nuget.org/nuget.exe
 - ps: >-
     nuget install NUnit.Console
+- ps: >-
+    nuget install NUnit.Editor
+    
 before_build:
  nuget restore
 build:
