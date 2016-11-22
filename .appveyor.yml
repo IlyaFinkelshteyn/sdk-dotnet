@@ -1,7 +1,6 @@
 version: 0.0.{build}
 install:
- -ps:(new-object net.webclient).DownloadFile('http://nuget.org/nuget.exe', 'nuget.exe')
- -ps: nuget install NUnit.Console
+ -cinst nunit
 before_build:
  nuget restore
 build:
