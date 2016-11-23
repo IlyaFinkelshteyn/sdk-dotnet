@@ -10,7 +10,7 @@ install:
 before_build:
  nuget restore
 build:
- project:./Authorize.NET/AuthorizeNET.csproj
+ project:AuthorizeNET.csproj
  verbosity:minimal
 environment:
   COVERALLS_REPO_TOKEN:
