@@ -6,9 +6,6 @@ before_build:
 platform:
   - Any CPU
   
-configuration:
-   - Debug
-  
 build:
  project: ./Authorize.NET/AuthorizeNET.csproj
  verbosity: minimal
