@@ -4,8 +4,10 @@ before_build:
  nuget restore
  
 platform:
-  - x86
   - Any CPU
+  
+ configuration:
+  - Debug
   
 build:
  project: ./Authorize.NET/AuthorizeNET.csproj
