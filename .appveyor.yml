@@ -5,9 +5,9 @@ before_build:
  
 platform:
   - Any CPU
-  
+ 
  configuration:
-  - Debug
+   - Debug
   
 build:
  project: ./Authorize.NET/AuthorizeNET.csproj
