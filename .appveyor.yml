@@ -7,12 +7,14 @@ install:
     
 before_build:
  nuget restore
-build:
- project: ./Authorize.NET/AuthorizeNET.csproj
- verbosity: minimal
+ 
 matrix:
   allow_failures:
     - NUnit.Editor: 0.9.0.0
+build:
+ project: ./Authorize.NET/AuthorizeNET.csproj
+ verbosity: minimal
+
 environment:
   COVERALLS_REPO_TOKEN:
     secure: i5GP0x27ZUHQS4syLSOKGGLh0T0t0Kykc
