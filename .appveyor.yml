@@ -1,3 +1,3 @@
 build:
- project: AuthorizeNET.csproj
+ project: ./Authorize.NET/AuthorizeNET.csproj
  verbosity: minimal
