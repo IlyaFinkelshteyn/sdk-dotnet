@@ -5,8 +5,8 @@ before_build:
  
 platform:
   - Any CPU
- 
- configuration:
+  
+configuration:
    - Debug
   
 build:
