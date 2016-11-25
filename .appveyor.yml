@@ -1,16 +1,12 @@
 version: 0.0.{build}
-install:
-- ps: >-
-    Invoke-WebRequest http://nuget.org/nuget.exe
-- ps: >-
-    nuget install NUnit.Editor
-    
+  
 before_build:
  nuget restore
  
-matrix:
-  allow_failures:
-    - NUnit.Editor: 0.9.0.0
+platform:
+  - x86
+  - Any CPU
+  
 build:
  project: ./Authorize.NET/AuthorizeNET.csproj
  verbosity: minimal
