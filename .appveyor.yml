@@ -10,6 +10,9 @@ before_build:
 build:
  project: ./Authorize.NET/AuthorizeNET.csproj
  verbosity: minimal
+matrix:
+  allow_failures:
+    - NUnit.Editor: 0.9.0.0
 environment:
   COVERALLS_REPO_TOKEN:
     secure: i5GP0x27ZUHQS4syLSOKGGLh0T0t0Kykc
